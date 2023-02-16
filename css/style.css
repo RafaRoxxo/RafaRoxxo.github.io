@@ -83,12 +83,12 @@
 #social-container li{
     flex: 1 1 0;
     max-width: 60px;
-    color: var(--main-color);
 
 }
 
 #social-container li a{
     font-size-adjust: 30px;
+    color: var(--main-color);
 }
 
 #email-container{
@@ -132,7 +132,7 @@
     margin-bottom: 10px;
 }
 
-#btn-projects{
+.dropbtn{
     font-weight: bold;
     font-size: 16px;
     color: var(--main-text-color);
@@ -148,19 +148,66 @@
     display: flex;
 }
 
-#btn-projects ion-icon,
-#btn-projects span{
+.droptbn ion-icon,
+.dropbtn span{
     flex: 1 1 0;
 }
 
-#btn-projects ion-icon{
+.dropbtn ion-icon{
     font-size: 20px;
     max-width: 20px;
 }
 
-#btn-projects:hover{
+.dropdown:hover .dropbtn{
     background-color: transparent;
+    
 }
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left: 100%;
+    bottom: -50%;
+    background-color: var(--main-color);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    
+    
+}
+
+.dropdown-content a {
+    color: var(--main-text-color);
+    padding: 20px 16px;
+    text-decoration: none;
+    display: block;
+
+  }
+
+.dropdown-content a:hover {
+    background-color: var(--about-bg-color);
+    border-radius: 4px;
+    transition: .5s;
+    
+    
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    border-radius: 4px;
+    transition: .5s;
+    
+
+}
+  
+
 
 #skills-section-title{
     border-top: 1px solid var(--border-color);
