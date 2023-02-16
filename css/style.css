@@ -203,12 +203,9 @@
     display: block;
     border-radius: 4px;
     transition: .5s;
-    
 
 }
   
-
-
 #skills-section-title{
     border-top: 1px solid var(--border-color);
     padding-top: 20px;
@@ -280,8 +277,15 @@
         line-height: 26px;
     }
 
-    #btn-projects{
+    .dropbtn{
         margin: 20px auto;
+    }
+
+    .dropdown-content{
+        position: relative;
+        left: 0;
+        bottom: 0;
+        margin-bottom: 10px;
     }
 
     .skills-box{
